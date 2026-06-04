@@ -1,0 +1,54 @@
+# ── Credentials and secrets ───────────────────────────────────────────────────
+.env
+*.key
+*.secret
+
+# ── Dataset files (too large for GitHub — host on Zenodo instead) ─────────────
+*.parquet
+*.csv
+*.json
+
+# Keep .env.example (intentionally committed)
+!.env.example
+
+# Keep config.yaml (committed with blank api_key)
+!config.yaml
+
+# ── Pipeline generated folders ────────────────────────────────────────────────
+data/
+cache/
+logs/
+outputs/
+final_dataset/
+
+# ── Engagement edge checkpoints and logs ──────────────────────────────────────
+final_dataset/engagement/checkpoints/
+final_dataset/engagement/logs/
+
+# ── Jupyter notebook artifacts ────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── OS generated files ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE files ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
