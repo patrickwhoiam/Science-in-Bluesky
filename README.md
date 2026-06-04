@@ -236,9 +236,9 @@ Produced by `hydrate_engagement_ids.py`. Each file stores full interaction recor
 | RQ2 — thread depth | `reply_edges.parquet` |
 | RQ2 — NLP content classification | `science_posts_unique.parquet` (English subset) |
 | RQ2 — user role analysis | `science_posts_unique.parquet` |
-| RQ3 — network construction (Part 1) | `repost_edges.parquet` + `reply_edges.parquet` |
-| RQ3 — centrality analysis (Part 2) | `repost_edges.parquet` *(pending)* |
-| RQ3 — community detection (Part 3) | `repost_edges.parquet` *(pending)* |
+| RQ3 — network construction (Part 1) | *(pending)* |
+| RQ3 — centrality analysis (Part 2) |  *(pending)* |
+| RQ3 — community detection (Part 3) |  *(pending)* |
 
 ---
 
