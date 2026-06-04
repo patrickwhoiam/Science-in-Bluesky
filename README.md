@@ -47,7 +47,7 @@ The analysis is organized around three research questions:
 sciencebluesky/
 │
 ├── analysis/
-│   ├── Dataset_overview.ipynb          <- Start here — dataset summary and statistics
+│   ├── Dataset_overview.ipynb
 │   ├── RQ1/
 │   │   └── RQ1_dissemination_landscape_revised.ipynb
 │   ├── RQ2/
@@ -55,34 +55,37 @@ sciencebluesky/
 │   └── RQ3/
 │       └── RQ3_Architectural_Influence.ipynb
 │
-├── final_dataset/                      <- Final datasets for analysis
-│   ├── science_posts_unique.parquet    <- Main dataset (start here)
+├── final_dataset/
+│   ├── science_posts_unique.parquet    <- copied here automatically after Stage 4
 │   ├── publication_link_candidate_posts.parquet
-│   └── engagement/
+│   └── engagement/                     <- written directly by hydrate_engagement_ids.py
+│       ├── posts_with_engagement.parquet
 │       ├── like_edges.parquet
 │       ├── repost_edges.parquet
-│       ├── reply_edges.parquet
-│       └── posts_with_engagement.parquet
+│       └── reply_edges.parquet
 │
-├── data/                               <- Pipeline intermediates (not for analysis)
-│   ├── interim/
-│   └── processed/
+├── data/
+│   ├── interim/                        <- Stages 1-2 outputs
+│   └── processed/                      <- Stages 3-4 outputs (source before final copy)
 │
-├── cache/                              <- API response caches (do not delete)
+├── cache/
 │   ├── openalex_metadata_cache.parquet
-│   ├── openalex_domain_field_cache.parquet
+│   ├── openalex_domain_field_cache.parquet  <- written by RQ1 notebook enrichment
 │   └── bluesky_engagement_cache.parquet
 │
-├── logs/                               <- Pipeline run logs
+├── outputs/                            <- auto-created by run_pipeline.py
+│   ├── tables/                         <- CSV previews from each stage
+│   └── figures/
 │
-├── run_pipeline.py                     <- Main pipeline — Stages 1–4
-├── hydrate_engagement_ids.py           <- Stage 5 — engagement edge extraction
-├── collect_altmetrics.py               <- Stage 6 — Altmetric scores (pending API key)
-├── config.yaml                         <- Configuration — edit paths here
-├── requirements.txt                    <- Python dependencies
-├── .env.example                        <- Environment variable template
+├── logs/
+│
+├── run_pipeline.py
+├── hydrate_engagement_ids.py
+├── collect_altmetrics.py
+├── config.yaml
+├── requirements.txt
+├── .env.example
 └── README.md
-```
 
 ---
 
