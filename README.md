@@ -16,7 +16,7 @@ The analysis is organized around three research questions:
 |---|------------------|--------|
 | RQ1 | What are the quantitative characteristics and disciplinary distributions of scientific paper mentions on Bluesky? | Ready |
 | RQ2 | How do users engage in scientific discourse on Bluesky, and what characterizes the quality of these discussions? | Ready |
-| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | pending analysis approach (Modification Needed |
+| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | pending analysis approach (Modification Needed) |
 
 ---
 
