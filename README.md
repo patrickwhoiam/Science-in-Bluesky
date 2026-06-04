@@ -366,14 +366,11 @@ pip install -r requirements.txt
 If you use this dataset or pipeline in your research, please cite:
 
 ```
-Yoseph, P. C. (2025). Dynamics of Scientific Discussion in Decentralized Online
-Social Networks: A Study of Bluesky (March–June 2025).
-Fudan University.
+-
 ```
 
 ---
 
 ## Contact
 
-Patrick Christian Yoseph  
-Fudan University  
+-
