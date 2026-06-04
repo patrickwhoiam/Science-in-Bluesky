@@ -1,0 +1,117 @@
+# Science Bluesky — Pipeline Configuration
+# ==========================================
+# Edit the values below to match your environment.
+# DO NOT commit real API keys to GitHub — use .env instead (see .env.example).
+
+project:
+  # Path to your raw Bluesky Firehose parquet files.
+  # Change this to where your Firehose parquets are stored.
+  raw_posts_dir: "E:/parquet_data/posts"
+
+  # Output root. Keep as "." to write all outputs inside this project folder.
+  project_dir: "."
+
+  # Filename pattern for raw parquet files.
+  file_glob: "*.parquet"
+
+pipeline:
+  # Maximum number of raw files to process. Set to null for the full dataset.
+  # Use a small number (e.g. 3) for quick testing.
+  max_files: null
+
+  # Keep only "create" operation records. Set to null to disable this filter.
+  operation_filter: ["create"]
+
+  # Keep only original top-level posts (removes replies and reposts).
+  top_level_only: true
+
+  # Parallel extraction workers. Start with 2. Use 1 if memory is high.
+  workers: 2
+
+  random_seed: 42
+  sample_rows: 5
+  manual_annotation_sample_size: 200
+
+openalex:
+  # OpenAlex API key — free from https://openalex.org/settings/api
+  # Leave blank here and set OPENALEX_API_KEY in your .env file instead.
+  api_key: ""
+
+  # Maximum DOIs per API batch request. Keep <= 100.
+  batch_size: 50
+  sleep_seconds: 0.2
+  max_retries: 4
+
+bluesky:
+  # Public Bluesky AppView API — no authentication required.
+  api_base: "https://public.api.bsky.app"
+  batch_size: 25
+  sleep_seconds: 0.25
+  max_retries: 4
+
+columns:
+  # Column name mapping for raw Firehose parquet files.
+  # Change these only if your Firehose data uses different column names.
+  uri: "uri"
+  did: "did"
+  operation: "operation"
+  rkey: "rkey"
+  created_at: "created_at"
+  text: "text"
+  langs: "langs"
+  reply_parent_uri: "reply_parent_uri"
+  reply_root_uri: "reply_root_uri"
+  facets_uris: "facets_uris"
+
+analysis:
+  # Time granularity for temporal plots. D = daily, W = weekly, M = monthly.
+  time_granularity: "W"
+
+doi_resolver_domains:
+  - "doi.org"
+  - "dx.doi.org"
+
+publication_domains:
+  # Preprint and open repositories
+  - "arxiv.org"
+  - "biorxiv.org"
+  - "medrxiv.org"
+  - "ssrn.com"
+  - "osf.io"
+  - "preprints.org"
+  - "researchsquare.com"
+
+  # Major publishers, journals, libraries, and proceedings
+  - "nature.com"
+  - "science.org"
+  - "cell.com"
+  - "nejm.org"
+  - "thelancet.com"
+  - "jamanetwork.com"
+  - "bmj.com"
+  - "plos.org"
+  - "frontiersin.org"
+  - "mdpi.com"
+  - "sciencedirect.com"
+  - "springer.com"
+  - "link.springer.com"
+  - "wiley.com"
+  - "onlinelibrary.wiley.com"
+  - "tandfonline.com"
+  - "oup.com"
+  - "academic.oup.com"
+  - "cambridge.org"
+  - "sagepub.com"
+  - "acs.org"
+  - "pubs.acs.org"
+  - "rsc.org"
+  - "ieee.org"
+  - "ieeexplore.ieee.org"
+  - "acm.org"
+  - "dl.acm.org"
+  - "jmlr.org"
+  - "proceedings.mlr.press"
+  - "aclweb.org"
+  - "aclanthology.org"
+  - "pubmed.ncbi.nlm.nih.gov"
+  - "ncbi.nlm.nih.gov"
