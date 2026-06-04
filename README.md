@@ -8,7 +8,7 @@
 
 ## Overview
 
-This repository contains the full data collection pipeline and analysis notebooks for a study of how scientific papers are shared and discussed on Bluesky. The study collects original science posts from the Bluesky Firehose, validates each post's DOI against OpenAlex, and produces a dataset of 115,789 OpenAlex-confirmed science posts alongside 784,342 engagement interaction records.
+This repository contains the full data collection pipeline and analysis notebooks for a study of how scientific papers are shared and discussed on Bluesky. The study collects original science posts from the Bluesky Firehose, validates them against OpenAlex scholarly data, and analyzes engagement patterns across three research questions.
 
 The analysis is organized around three research questions:
 
@@ -47,45 +47,25 @@ The analysis is organized around three research questions:
 sciencebluesky/
 │
 ├── analysis/
-│   ├── Dataset_overview.ipynb
 │   ├── RQ1/
-│   │   └── RQ1_dissemination_landscape_revised.ipynb
 │   ├── RQ2/
-│   │   └── RQ2_final_complete.ipynb
 │   └── RQ3/
-│       └── RQ3_Architectural_Influence.ipynb
 │
 ├── final_dataset/
-│   ├── science_posts_unique.parquet    <- copied here automatically after Stage 4
-│   ├── publication_link_candidate_posts.parquet
-│   └── engagement/                     <- written directly by hydrate_engagement_ids.py
-│       ├── posts_with_engagement.parquet
-│       ├── like_edges.parquet
-│       ├── repost_edges.parquet
-│       └── reply_edges.parquet
+│   └── engagement/
 │
 ├── data/
-│   ├── interim/                        <- Stages 1-2 outputs
-│   └── processed/                      <- Stages 3-4 outputs (source before final copy)
+│   ├── interim/
+│   └── processed/
 │
 ├── cache/
-│   ├── openalex_metadata_cache.parquet
-│   ├── openalex_domain_field_cache.parquet  <- written by RQ1 notebook enrichment
-│   └── bluesky_engagement_cache.parquet
 │
-├── outputs/                            <- auto-created by run_pipeline.py
-│   ├── tables/                         <- CSV previews from each stage
+├── outputs/
+│   ├── tables/
 │   └── figures/
 │
-├── logs/
-│
-├── run_pipeline.py
-├── hydrate_engagement_ids.py
-├── collect_altmetrics.py
-├── config.yaml
-├── requirements.txt
-├── .env.example
-└── README.md
+└── logs/
+```
 
 ---
 
@@ -334,17 +314,17 @@ Stage 6 — collect_altmetrics.py  [PENDING]
 
 ## Known Limitations
 
-1. **Engagement counts are a snapshot** — `like_count`, `repost_count`, `reply_count`, and `quote_count` in `science_posts_unique.parquet` reflect the time Stage 4 was run, not live counts. To refresh, delete `cache/bluesky_engagement_cache.parquet` and rerun Stage 4.
+1. **Engagement counts are a snapshot** — `like_count`, `repost_count`, `reply_count`, and `quote_count` in `science_posts_unique.parquet` reflect the time Stage 4 was run, not live counts. To refresh them, delete `cache/bluesky_engagement_cache.parquet` and rerun Stage 4.
 
 2. **Altmetrics pending** — Cross-platform benchmark data (RQ1 Part 3) has not yet been collected. The RQ1 notebook skips these cells gracefully until the file is available.
 
-3. **Institutional classifier is conservative** — The two-tier account classifier uses high-confidence handle patterns only. Researchers using personal handles are classified as Individual even if institutionally affiliated. The reported n=1,359 institutional accounts is a lower bound.
+3. **Institutional classifier is conservative** — The two-tier account classifier uses high-confidence handle patterns only. Researchers using personal handles are classified as Individual even if institutionally affiliated.
 
 4. **Time window** — Data covers March–June 2025, a period of active post-migration growth on Bluesky. Findings reflect this specific platform adoption phase and may not generalize to earlier or later periods.
 
 5. **Network subsampling** — RQ3 community detection is run on a 30,000-node subsample (top-degree nodes retained) due to computational limits. Results are representative but not exhaustive.
 
-6. **Like and repost URIs** — The Bluesky public API does not return full AT-URIs for like and repost records. Actor DIDs are stored instead. This does not affect network analysis since edges are constructed from actor DIDs.
+6. **Like and repost URIs** — The Bluesky public API does not return full AT-URIs for like and repost records. Actor DIDs are stored instead. This does not affect network analysis since edges are correctly identified.
 
 ---
 
@@ -369,11 +349,11 @@ pip install -r requirements.txt
 If you use this dataset or pipeline in your research, please cite:
 
 ```
--
+[Citation to be added]
 ```
 
 ---
 
 ## Contact
 
--
+[Contact information to be added]
