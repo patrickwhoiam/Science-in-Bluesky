@@ -333,22 +333,6 @@ Stage 6 — collect_altmetrics.py  [PENDING]
 
 ---
 
-## Known Limitations
-
-1. **Engagement counts are a snapshot** — `like_count`, `repost_count`, `reply_count`, and `quote_count` in `science_posts_unique.parquet` reflect the time Stage 4 was run, not live counts. To refresh them, delete `cache/bluesky_engagement_cache.parquet` and rerun Stage 4.
-
-2. **Altmetrics pending** — Cross-platform benchmark data (RQ1 Part 3) has not yet been collected. The RQ1 notebook skips these cells gracefully until the file is available.
-
-3. **Institutional classifier is conservative** — The two-tier account classifier uses high-confidence handle patterns only. Researchers using personal handles are classified as Individual even if institutionally affiliated.
-
-4. **Time window** — Data covers March–June 2025, a period of active post-migration growth on Bluesky. Findings reflect this specific platform adoption phase and may not generalize to earlier or later periods.
-
-5. **Network subsampling** — RQ3 community detection is run on a 30,000-node subsample (top-degree nodes retained) due to computational limits. Results are representative but not exhaustive.
-
-6. **Like and repost URIs** — The Bluesky public API does not return full AT-URIs for like and repost records. Actor DIDs are stored instead. This does not affect network analysis since edges are correctly identified.
-
----
-
 ## Requirements
 
 ```bash
