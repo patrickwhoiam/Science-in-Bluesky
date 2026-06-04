@@ -47,13 +47,12 @@ The analysis is organized around three research questions:
 sciencebluesky/
 │
 ├── analysis/
-│   ├── Dataset_overview.ipynb
 │   ├── RQ1/
-│   │   └── RQ1_dissemination_landscape_revised.ipynb
 │   ├── RQ2/
-│   │   └── RQ2_final_complete.ipynb
 │   └── RQ3/
-│       └── RQ3_Architectural_Influence.ipynb
+│   │   RQ1_dissemination_landscape_revised.ipynb
+│   │   RQ2_final_complete.ipynb
+│   │   RQ3_Architectural_Influence.ipynb
 │
 ├── final_dataset/
 │   ├── science_posts_unique.parquet    <- copied here automatically after Stage 4
