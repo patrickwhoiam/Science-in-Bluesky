@@ -1,5 +1,5 @@
 # Science on Bluesky — Research Dataset and Analysis Pipeline
-
+<img width="1837" height="282" alt="image" src="https://github.com/user-attachments/assets/a35370c9-d6e7-4cae-bdfb-ad6209727e6b" />
 **Project:** Dynamics of Scientific Discussion in Decentralized Online Social Networks  
 **Platform:** Bluesky (AT Protocol)  
 **Data period:** March 2025 – June 2025  
@@ -7,7 +7,6 @@
 ---
 
 ## Overview
-<img width="1837" height="282" alt="image" src="https://github.com/user-attachments/assets/a35370c9-d6e7-4cae-bdfb-ad6209727e6b" />
 
 This repository contains the full data collection pipeline and analysis notebooks for a study of how scientific papers are shared and discussed on Bluesky. The study collects original science posts from the Bluesky Firehose, validates them against OpenAlex scholarly data, and analyzes engagement patterns across three research questions.
 
