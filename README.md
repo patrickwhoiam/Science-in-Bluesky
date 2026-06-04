@@ -16,7 +16,7 @@ The analysis is organized around three research questions:
 |---|------------------|--------|
 | RQ1 | What are the quantitative characteristics and disciplinary distributions of scientific paper mentions on Bluesky? | Ready |
 | RQ2 | How do users engage in scientific discourse on Bluesky, and what characterizes the quality of these discussions? | Ready |
-| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | Ready |
+| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | Part 1 ready — Parts 2 and 3 pending discussion |
 
 ---
 
@@ -233,9 +233,9 @@ Produced by `hydrate_engagement_ids.py`. Each file stores full interaction recor
 | RQ2 — thread depth | `reply_edges.parquet` |
 | RQ2 — NLP content classification | `science_posts_unique.parquet` (English subset) |
 | RQ2 — user role analysis | `science_posts_unique.parquet` |
-| RQ3 — network construction | `repost_edges.parquet` + `reply_edges.parquet` |
-| RQ3 — centrality analysis | `repost_edges.parquet` |
-| RQ3 — community detection | `repost_edges.parquet` |
+| RQ3 — network construction (Part 1) | `repost_edges.parquet` + `reply_edges.parquet` |
+| RQ3 — centrality analysis (Part 2) | `repost_edges.parquet` *(pending)* |
+| RQ3 — community detection (Part 3) | `repost_edges.parquet` *(pending)* |
 
 ---
 
@@ -263,9 +263,9 @@ Open `analysis/Dataset_overview.ipynb` first for a full dataset summary and stat
 
 `analysis/RQ3/RQ3_Architectural_Influence.ipynb`
 
-- Part 1: Network construction — weighted directed repost and reply networks, degree concentration (CCDF + Gini)
-- Part 2: Decentralized identity — institutional account centrality (PageRank, in-degree) vs individual accounts via top-centile over-representation analysis
-- Part 3: Network topology — Louvain community detection with 50-iteration null model comparison, modularity z-score
+- Part 1: Network construction — weighted directed repost and reply networks, degree concentration (CCDF + Gini) ✓ **Included in current analysis**
+- Part 2: Decentralized identity — institutional account centrality analysis ⏳ **Pending — to be confirmed in next meeting**
+- Part 3: Network topology — Louvain community detection with null model comparison ⏳ **Pending — to be confirmed in next meeting**
 
 ---
 
