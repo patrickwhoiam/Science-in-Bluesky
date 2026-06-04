@@ -1,4 +1,4 @@
-# Science on Bluesky — Dataset Processing and Analysis Pipeline
+# Science on Bluesky — Research Dataset and Analysis Pipeline
 
 **Project:** Dynamics of Scientific Discussion in Decentralized Online Social Networks  
 **Platform:** Bluesky Social (AT Protocol)  
@@ -16,7 +16,7 @@ The analysis is organized around three research questions:
 |---|------------------|--------|
 | RQ1 | What are the quantitative characteristics and disciplinary distributions of scientific paper mentions on Bluesky? | Ready |
 | RQ2 | How do users engage in scientific discourse on Bluesky, and what characterizes the quality of these discussions? | Ready |
-| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | pending analysis approach |
+| RQ3 | How do Bluesky's decentralized components influence the visibility and flow of scientific information? | Part 1 ready — Parts 2 and 3 pending discussion |
 
 ---
 
@@ -24,17 +24,20 @@ The analysis is organized around three research questions:
 
 | Metric | Value |
 |--------|-------|
-| OpenAlex-validated science posts | 115,789 |
-| Unique scholarly papers referenced | 82,154 |
-| Unique Bluesky users posting science | 29,971 |
 | Observation period | March 2025 – June 2025 |
-| Like interaction records | 555,582 |
-| Repost interaction records | 174,867 |
-| Reply records (with thread tree) | 53,893 |
-| Total engagement records | 784,342 |
-| Institutional accounts | 1,359 (4.5%) |
-| Individual accounts | 28,668 (95.5%) |
-| English posts for NLP analysis | ~82,534 |
+| Publication-link candidate records | 666,309 |
+| Unique publication-link candidate posts | 479,073 |
+| OpenAlex-validated original science posts | 115,789 |
+| Unique scholarly papers / OpenAlex works | 82,154 |
+| Unique science-posting Bluesky users | 29,971 |
+| Collected like records | 555,582 |
+| Collected repost records | 174,867 |
+| Collected reply records with tree metadata | 53,893 |
+| Unique reply users | 21,256 |
+| Total collected engagement records | 784,342 |
+| Institutional science-posting accounts | 1,359 (4.5%) |
+| Individual science-posting accounts | 28,668 (95.5%) |
+| English posts used for NLP | ~82,534 |
 
 ---
 
