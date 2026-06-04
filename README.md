@@ -41,30 +41,51 @@ The analysis is organized around three research questions:
 
 ---
 
-## Repository Structure
+## Structure recommendation
 
 ```
 sciencebluesky/
 │
 ├── analysis/
+│   ├── Dataset_overview.ipynb
 │   ├── RQ1/
+│   │   └── RQ1_dissemination_landscape_revised.ipynb
 │   ├── RQ2/
+│   │   └── RQ2_final_complete.ipynb
 │   └── RQ3/
+│       └── RQ3_Architectural_Influence.ipynb
 │
 ├── final_dataset/
-│   └── engagement/
+│   ├── science_posts_unique.parquet    <- copied here automatically after Stage 4
+│   ├── publication_link_candidate_posts.parquet
+│   └── engagement/                     <- written directly by hydrate_engagement_ids.py
+│       ├── posts_with_engagement.parquet
+│       ├── like_edges.parquet
+│       ├── repost_edges.parquet
+│       └── reply_edges.parquet
 │
 ├── data/
-│   ├── interim/
-│   └── processed/
+│   ├── interim/                        <- Stages 1-2 outputs
+│   └── processed/                      <- Stages 3-4 outputs (source before final copy)
 │
 ├── cache/
+│   ├── openalex_metadata_cache.parquet
+│   ├── openalex_domain_field_cache.parquet  <- written by RQ1 notebook enrichment
+│   └── bluesky_engagement_cache.parquet
 │
-├── outputs/
-│   ├── tables/
+├── outputs/                            <- auto-created by run_pipeline.py
+│   ├── tables/                         <- CSV previews from each stage
 │   └── figures/
 │
-└── logs/
+├── logs/
+│
+├── run_pipeline.py
+├── hydrate_engagement_ids.py
+├── collect_altmetrics.py
+├── config.yaml
+├── requirements.txt
+├── .env.example
+└── README.md
 ```
 
 ---
