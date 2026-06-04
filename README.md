@@ -1,4 +1,4 @@
-# Science on Bluesky — Research Dataset and Analysis Pipeline
+# Science on Bluesky — Pipeline, Dataset, and Analysis 
 **Project:** Dynamics of Scientific Discussion in Decentralized Online Social Networks  
 **Platform:** Bluesky (AT Protocol)  
 **Data period:** March 2025 – June 2025  
