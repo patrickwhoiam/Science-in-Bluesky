@@ -37,7 +37,6 @@ The analysis is organized around three research questions:
 | Total collected engagement records | 784,342 |
 | Institutional science-posting accounts | 1,359 (4.5%) |
 | Individual science-posting accounts | 28,668 (95.5%) |
-| English posts used for NLP | ~82,534 |
 
 ---
 
