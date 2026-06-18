@@ -27,16 +27,16 @@ The analysis is organized around three research questions:
 | Observation period | March 2025 – June 2025 |
 | Publication-link candidate records | 666,309 |
 | Unique publication-link candidate posts | 479,073 |
-| OpenAlex-validated original science posts | 115,789 |
-| Unique scholarly papers / OpenAlex works | 82,154 |
-| Unique science-posting Bluesky users | 29,971 |
-| Collected like records | 555,582 |
-| Collected repost records | 174,867 |
-| Collected reply records with tree metadata | 53,893 |
-| Unique reply users | 21,256 |
-| Total collected engagement records | 784,342 |
-| Institutional science-posting accounts | 1,359 (4.5%) |
-| Individual science-posting accounts | 28,668 (95.5%) |
+| OpenAlex-validated original science posts | 307,711 |
+| Unique scholarly papers / OpenAlex works | 179,558 |
+| Unique science-posting Bluesky users | 36,840 |
+| Collected like records | 792,449 |
+| Collected repost records | 292,867 |
+| Collected reply records with tree metadata | 322,779 |
+| Unique reply users | TBC |
+| Total collected engagement records | 1,408,095 |
+| Institutional science-posting accounts | TBC |
+| Individual science-posting accounts | TBC |
 
 ---
 
