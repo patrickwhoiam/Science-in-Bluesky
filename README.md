@@ -22,7 +22,7 @@ The analysis is organized around three research questions:
 
 ## Key Statistics
 
-```markdown
+
 | Metric | Before (Original Pipeline) | After (+ URL Resolution) | Change |
 |--------|---------------------------|--------------------------|--------|
 | Observation period | March 2025 – June 2025 | March 2025 – June 2025 | — |
@@ -38,7 +38,6 @@ The analysis is organized around three research questions:
 | Total collected engagement records | 784,342 | 1,408,095 | +79.6% |
 | Institutional science-posting accounts | 1,359 (4.5%) | 3,740 (10.2%) | +175.2% |
 | Individual science-posting accounts | 28,668 (95.5%) | 33,100 (89.8%) | +15.5% |
-```
 
 ---
 
