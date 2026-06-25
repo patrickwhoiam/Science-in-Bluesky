@@ -23,32 +23,23 @@ The analysis is organized around three research questions:
 ## Key Statistics
 
 
- | Metric | Count |
+## Dataset Overview
 
+This dataset covers science-related Bluesky posts from March 2025 to June 2025.
+
+| Metric | Count |
 |--------|------:|
-
 | Publication-link candidate records | 666,309 |
-
 | Unique publication-link candidate posts | 479,073 |
-
 | OpenAlex-validated science posts | 307,711 |
-
 | Unique scholarly papers / OpenAlex works | 179,558 |
-
 | Unique science-posting Bluesky users | 36,840 |
-
 | Like records | 792,449 |
-
 | Repost records | 292,867 |
-
 | Reply records with tree metadata | 322,779 |
-
 | Unique reply users | 27,166 |
-
 | Total engagement records | 1,408,095 |
-
 | Institutional science-posting accounts | 3,740 |
-
 | Individual science-posting accounts | 33,100 |
 
 ---
