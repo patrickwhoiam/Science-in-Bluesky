@@ -56,14 +56,13 @@ Altmetric data was collected for DOI-linked scholarly papers in the Bluesky scie
 
 Mention coverage is calculated among the **111,536 papers with an Altmetric record**.
 
-| Platform | Mean mentions per paper | Papers with ≥1 mention |
-|----------|------------------------:|----------------------:|
-| Bluesky | 7.8 | 108,335 (97.1%) |
-| Twitter/X | 32.9 | 82,981 (74.4%) |
-| News media | 4.6 | 19,479 (17.5%) |
-| Reddit | 1.8 | 40,000–67,000 (35.9%–60.1%) |
-| Blogs | 0.5 | 18,500–37,000 (16.6%–33.2%) |
-
+| Platform | Mean mentions per paper |
+|----------|------------------------:|
+| Bluesky | 7.8 |
+| Twitter/X | 32.9 |
+| News media | 4.6 |
+| Reddit | 1.8 |
+| Blogs | 0.5 |
 ---
 
 ## Structure recommendation
