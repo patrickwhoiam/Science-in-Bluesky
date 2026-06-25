@@ -293,10 +293,6 @@ Open `analysis/Dataset_overview.ipynb` first for a full dataset summary and stat
 
 `analysis/RQ3/RQ3_Architectural_Influence.ipynb`
 
-- Part 1: Network construction — weighted directed repost and reply networks, degree concentration (CCDF + Gini) ✓ **Included in current analysis**
-- Part 2: Decentralized identity — institutional account centrality analysis ⏳ **Pending — to be confirmed in next meeting**
-- Part 3: Network topology — Louvain community detection with null model comparison ⏳ **Pending — to be confirmed in next meeting**
-
 ---
 
 ## Data Collection Pipeline — How It Works
