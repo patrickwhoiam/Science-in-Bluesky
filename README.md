@@ -25,7 +25,7 @@ The analysis is organized around three research questions:
 
 ## Dataset Overview
 
-This dataset covers science-related Bluesky posts from March 2025 to June 2025.
+This dataset covers science-related Bluesky posts from **March 2025 to June 2025**.
 
 | Metric | Count |
 |--------|------:|
@@ -41,6 +41,28 @@ This dataset covers science-related Bluesky posts from March 2025 to June 2025.
 | Total engagement records | 1,408,095 |
 | Institutional science-posting accounts | 3,740 |
 | Individual science-posting accounts | 33,100 |
+
+## Altmetric Data Overview
+
+Altmetric data was collected for DOI-linked scholarly papers in the Bluesky science dataset using the **Altmetric Details Page API**. The Altmetric data is used as an external benchmark to compare Bluesky attention with broader online attention across other platforms.
+
+| Metric | Count |
+|--------|------:|
+| Unique DOIs queried | 179,558 |
+| Papers with Altmetric record | 111,536 (62.1%) |
+| Papers not tracked by Altmetric | 68,022 (37.9%) |
+
+### Cross-Platform Mention Coverage
+
+Mention coverage is calculated among the **111,536 papers with an Altmetric record**.
+
+| Platform | Mean mentions per paper | Papers with ≥1 mention |
+|----------|------------------------:|----------------------:|
+| Bluesky | 7.8 | 108,335 (97.1%) |
+| Twitter/X | 32.9 | 82,981 (74.4%) |
+| News media | 4.6 | 19,479 (17.5%) |
+| Reddit | 1.8 | 40,000–67,000 (35.9%–60.1%) |
+| Blogs | 0.5 | 18,500–37,000 (16.6%–33.2%) |
 
 ---
 
