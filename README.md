@@ -258,7 +258,7 @@ Produced by `hydrate_engagement_ids.py`. Each file stores full interaction recor
 |------|---------|
 | RQ1 — temporal trends, growth curve | `science_posts_unique.parquet` |
 | RQ1 — domain and field distribution | `science_posts_unique.parquet` + OpenAlex cache |
-| RQ1 — cross-platform benchmark | `altmetrics.parquet` *(pending)* |
+| RQ1 — cross-platform benchmark | `altmetrics.parquet`  |
 | RQ2 — passive vs active engagement | `science_posts_unique.parquet` |
 | RQ2 — thread depth | `reply_edges.parquet` |
 | RQ2 — NLP content classification | `science_posts_unique.parquet` (English subset) |
