@@ -347,7 +347,7 @@ Stage 6 — collect_altmetrics.py  [PENDING]
 |--------|---------|--------|
 | Bluesky Firehose (AT Protocol) | Raw posts — March to June 2025 | Already collected |
 | Bluesky AppView API | Engagement counts + actor URI lists | Public, no authentication required |
-| OpenAlex API | Paper metadata, domain/field classification | Free — API key recommended |
+| OpenAlex API | Paper metadata, domain/field classification | Free, API key recommended |
 | Altmetric API | Cross-platform attention scores | Requires institutional API key approval |
 
 ---
